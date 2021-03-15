@@ -1,0 +1,191 @@
+@font-face {
+	font-family: 'TmoneyRoundWindExtraBold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: lightgray;
+}
+
+#head {
+	position: relative;
+	text-align: center;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: #00542f;
+	z-index: 101;
+}
+
+#head a {
+	display: inline-block;
+	margin: 0 20px;
+	width: 30px;
+	height: 30px;
+}
+
+
+#head label {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+}
+
+#head input[type=checkbox] {
+	display: none;
+}
+
+#menu:checked ~#sidemenu {
+	width: 200px
+}
+
+#sidemenu {
+	position: absolute;
+	top: 50px;
+	width: 0px;
+	height: 860px;
+	background-color: #00542f;
+	z-index: 102;
+	transition: all 1s;
+	overflow: hidden;
+	text-align: left;
+}
+
+#sidemenu a:hover {
+	color: limegreen;
+	text-decoration: underline;
+}
+
+#sidemenu ul li:first-child a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#sidemenu a {
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+}
+
+*, body, html {
+	padding: 0;
+	margin: 0;
+}
+
+#wrap {
+	background-color: white;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0px auto;
+	width: 860px;
+}
+
+#board {
+	width: 100%;
+	margin-top: 50px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+input[type=radio]:checked+label p {
+	background-color: rgb(80, 80, 80);
+	color: white;
+}
+
+.num {
+	background-color: rgb(220, 220, 220);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: 20px auto;
+}
+
+label>p {
+	display: inline-block;
+	text-align: center;
+	color: gray;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+table {
+	font-size: 14px;
+	color: rgb(80, 80, 80);
+}
+
+lable {
+	border: 1px solid black;
+}
+
+table th:first-child {
+	width: 600px;
+	text-align: left;
+}
+
+th {
+	margin-top: 10px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+	min-width: 60px;
+}
+
+table tr:first-child th {
+	font-size: 18px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 97%;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
+
+h1 {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#ad {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h2 {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: red;
+}
+
+form {
+	color : white;
+	float : right;
+	margin : 3px;
+}
+
+#ad img {
+	width: 400px;
+	margin: 10px auto;
+}
+
+@media screen and (max-width : 860px) {
+	#wrap {
+		width: 97.5%;
+	}
+}

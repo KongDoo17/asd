@@ -1,0 +1,282 @@
+@font-face {
+   font-family: 'TmoneyRoundWindExtraBold';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body {
+	background-color: lightgray;
+}
+
+#head {
+	position: relative;
+	text-align: center;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: #00542f;
+	z-index: 101;
+}
+
+
+
+#head a {
+	display: inline-block;
+	margin: 0px;
+	width: 250px;
+	height: 50px;
+}
+
+
+
+#head label {
+	position: absolute;
+	left: 5px;
+	top: 3px;
+}
+
+#head input[type=checkbox] {
+	display: none;
+}
+
+#menu:checked ~#sidemenu {
+	width: 200px
+}
+
+#sidemenu {
+	position: absolute;
+	top: 50px;
+	width: 0px;
+	height: 860px;
+	background-color: #00542f;
+	z-index: 102;
+	transition: all 1s;
+	overflow: hidden;
+	text-align: left;
+}
+
+#sidemenu a:hover {
+	color: limegreen;
+	text-decoration: underline;
+}
+
+#sidemenu ul li:first-child a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#sidemenu a {
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#rank-list a:hover {
+	text-decoration: underline;
+}
+
+#rank-list {
+	overflow: hidden;
+	width: 160px;
+	height: 20px;
+	margin: 0;
+}
+
+#rank-list dt {
+	display: none;
+}
+
+#rank-list dd {
+	position: relative;
+	margin: 0;
+}
+
+#rank-list ol {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#rank-list li {
+	margin-top: 0px;
+	border: none;
+	height: 20px;
+	line-height: 20px;
+}
+
+*, body, html {
+	padding: 0;
+	margin: 0;
+}
+
+#wrap {
+	background-color: white;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0px auto;
+	width: 860px;
+}
+
+#wrap a {
+	text-decoration: none;
+	color: limegreen;
+}
+
+#wrap a:hover {
+	text-decoration: underline;
+}
+
+#rtwrap {
+	margin: 0 auto;
+	width: 860px;
+	height: 50px;
+	background: white;
+}
+
+#a a {
+	color: red;
+}
+
+#realtime {
+	background-color: white;
+	position: relative;
+	margin: 0 auto;
+	top: 24px;
+	margin-top: 50px;
+	width: 300px;
+	border: 2px solid green;
+	height: 20px;
+	z-index: 100;
+}
+
+#realtime a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#realtime a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#rank-list a {
+	color: #000;
+	text-decoration: none;
+}
+
+#realtime li {
+	border: none;
+	color: white;
+}
+
+#realtime>ul {
+	height: 0px;
+	border: none;
+	background-color: rgba(0, 55, 0, 0.85);
+	transition: height 1s;
+	overflow: hidden;
+}
+
+#realtime>ul:first-child {
+	display: none;
+}
+
+#realtime input[type=checkbox] {
+	display: none;
+}
+
+#realtime label {
+	position: absolute;
+	top: 5px;
+	left: 280px;
+	width: 0px;
+	height: 0px;
+	border-top: 0px solid none;
+	border-bottom: 10px solid green;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	transition: all 0.5s;
+}
+
+#a, #b, #c, #d, #e {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#a {
+	height: 500px;
+}
+
+#b, #c {
+	width: 36%;
+	height: 250px;
+}
+
+#d, #e {
+	height: 250px;
+}
+
+#c {
+	margin-top: -267px;
+	margin-left: 62%;
+}
+
+#a, #d {
+	width: 56%;
+}
+
+#e {
+	width: 36%;
+}
+
+li {
+	border-bottom: 1px solid rgb(200, 200, 200);
+	font-family: 'TmoneyRoundWindExtraBold';
+	margin-top: 4px;
+	list-style: none;
+}
+
+#real:checked {
+	height: 250px;
+}
+
+#real:checked ~label {
+	transform: rotate(58deg);
+}
+
+#real:checked ~ul {
+	height: 250px;
+}
+
+#head form {
+	color : white;
+	float : right;
+	margin : 3px;
+}
+
+@media screen and (max-width : 860px) {
+	#wrap {
+		width: 97.5%;
+	}
+	#rtwrap {
+		width: 97.5%;
+	}
+	#a, #b, #c, #d, #e {
+		width: 85%;
+	}
+	#c {
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+	form {
+		
+	}
+}
